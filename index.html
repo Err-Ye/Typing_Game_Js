@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="body">
+        <div class="upper">
+            <!-- <button>Basic</button> -->
+            <!-- <button>Advanced</button> -->
+            <!-- <button>Professional</button> -->
+        </div>
+        <div class="mid">
+            <div class="showText">
+                <div class="question" id="question">
+                </div>
+                <div class="answer" id="answer">
+                </div>
+            </div>
+            <div class="keyboard">
+                <!-- keyboard -->
+                <div class="row">
+                    <div class="key"><i>q</i></div>
+                    <div class="key"><i>w</i></div>
+                    <div class="key"><i>e</i></div>
+                    <div class="key"><i>r</i></div>
+                    <div class="key"><i>t</i></div>
+                    <div class="key"><i>y</i></div>
+                    <div class="key"><i>u</i></div>
+                    <div class="key"><i>i</i></div>
+                    <div class="key"><i>o</i></div>
+                    <div class="key"><i>p</i></div>
+                    
+                </div>
+                <div class="row">
+                    <div class="key"><i>a</i></div>
+                    <div class="key"><i>s</i></div>
+                    <div class="key"><i>d</i></div>
+                    <div class="key"><i>f</i></div>
+                    <div class="key"><i>g</i></div>
+                    <div class="key"><i>h</i></div>
+                    <div class="key"><i>j</i></div>
+                    <div class="key"><i>k</i></div>
+                    <div class="key"><i>l</i></div>
+                   
+                </div>
+                <div class="row">
+                    <div class="key"><i>z</i></div>
+                    <div class="key"><i>x</i></div>
+                    <div class="key"><i>c</i></div>
+                    <div class="key"><i>v</i></div>
+                    <div class="key"><i>b</i></div>
+                    <div class="key"><i>n</i></div>
+                    <div class="key"><i>m</i></div>
+                    
+                </div>    
+                <div class="row">
+                    <div id="space"><i>spaceBar</i></div>
+                </div>
+            </div>
+        </div>
+        <div class="lower">
+            <!-- <button id="start" onclick="start()">Start</button>  -->
+            <div class="showInfo" id="showInfo">
+                <div>Correct: <span id="correctWord"></span></div>
+                <div>Incorrect: <span id="uncorrectWord"></span></div>
+                <div>WPM: <span id="wpm"></span></div>
+                <div class="mood" id="mood">
+                    <div>Mood</div>
+                    <button id="wiSp" onclick="start(1)">With SpaceBar</button>
+                    <button id="wiOutSp" onclick="start(2)">Without SpaceBar</button>
+                    <button id="mix" onclick="start(3)">Mix</button>
+                </div>
+                <div id="cOrIn"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
